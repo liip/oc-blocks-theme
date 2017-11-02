@@ -14,6 +14,9 @@ git clone https://github.com/liip/oc-blocks-theme.git blocks
 in your backend, check the static pages plugin. You now have a blocks tab where you can add different blocks, enter data 
 and even rearrange their order.
 
+![static pages example](blocks.jpg)
+
 To add more block types, edit the meta/groups.yaml file. 
 Important: each group definition has a corresponding partial file in 
 partials/blocks/{group_name}. The form data is passed as 'data'.
+
