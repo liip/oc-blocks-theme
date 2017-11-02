@@ -1,0 +1,33 @@
+simple:
+  name: Title
+  description: Title with Description
+  icon: icon-paragraph
+  fields:
+    section_title:
+      label: Title
+      type: text
+    section_teaser:
+      label: Teaser
+      type: textarea
+      size: small
+
+richeditor:
+  name: Richeditor
+  description: Full blown WYSIWYG Editor
+  icon: icon-file-text-o
+  fields:
+    section_richeditor:
+      label: Editor
+      type: richeditor
+
+rect:
+  name: Rect
+  description: A colored rect
+  icon: icon-square
+  fields:
+    section_size:
+      label: Size (px)
+      type: number
+    section_color:
+      type: colorpicker
+

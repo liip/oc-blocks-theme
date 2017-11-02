@@ -1,0 +1,23 @@
+[staticPage]
+==
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ this.page.title }}</title>
+    <link rel="stylesheet" href="{{ 'assets/styles.css'|theme }}">
+</head>
+<body>
+<!-- repeater definition -->
+{repeater name="sections" groups="themes/blocks/meta/blocks.yaml" tab="Blocks"}
+    {variable name="_dummy" type="text"}{/variable}
+{/repeater}
+
+<!-- render blocks -->
+{% for section in sections %}
+    <!-- must reside in partials/blocks/{name_of_group} -->
+    {% partial 'blocks/' ~ section._group data=section %}
+{% endfor %}
+
+{% page %}
+</body>
+</html>
